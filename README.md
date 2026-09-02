@@ -8,10 +8,10 @@ Member 3:
 Member 4:
 =============================================
 
-========== Application Information ==========
+============ Website Information ============
 
-Name:
-Motto:
+Name: ORe2 
+Motto: Offload, Rebalance, Restore.
 
 =============================================
 
@@ -29,11 +29,15 @@ Why we chose the Lifestyle Track titled Beating the Burnout instead of Planning 
 
 What is the issue?
 
-- 
+- Students in universities are stressed and overloaded with the amount of task they needed to do. They do not know how much weight they are carrying on their backs which prompt them to procastinate less urgent work that will backfire and hence, leads to stress and workload overload.
 
 Who is our target user?
 
-- We are specifically targeting students that are in universities as they have to manage between doing assignments, tests, quizzes, comittee events and social activities. However, school students, corporate employees or anyone that is struggling with stress and workload can be benefitted by our website. 
+- We are specifically targeting students that are in universities as they have to manage between doing assignments, tests, part-time jobs, comittee events and social activities. However, school students, corporate employees or anyone that is struggling with stress and workload can be benefitted by our website. 
+
+Current solution and our solution.
+
+-
 
 
 =============================================
