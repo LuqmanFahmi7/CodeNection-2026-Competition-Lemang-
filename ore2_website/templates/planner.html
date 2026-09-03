@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="planner">
+    <div class="planner-heading">
+        <div>
+            <p class="eyebrow">YOUR WEEK</p>
+            <h1>Planner</h1>
+            <p>Add assignments and commitments, then use the workload view to see the bigger picture.</p>
+        </div>
+        <div class="mini-stat">
+            <strong>{{ data.total_hours }}h</strong>
+            <span>planned this week</span>
+        </div>
+    </div>
+
+    <div class="planner-layout">
+        <form class="add-task-card" method="post">
+            <h2>Add a task</h2>
+            <label>Task name
+                <input name="title" placeholder="e.g. Finish database report" required>
+            </label>
+            <label>Course / area
+                <input name="course" placeholder="e.g. Database Systems">
+            </label>
+            <div class="two-col">
+                <label>Hours
+                    <input name="hours" type="number" min="1" max="40" value="2">
+                </label>
+                <label>Priority
+                    <select name="priority">
+                        <option>High</option>
+                        <option selected>Medium</option>
+                        <option>Low</option>
+                    </select>
+                </label>
+            </div>
+            <button class="dark-button" type="submit">Add to planner</button>
+        </form>
+
+        <div class="task-list-card">
+            <div class="task-list-heading">
+                <h2>This week's load</h2>
+                <span>{{ tasks|length }} tasks</span>
+            </div>
+
+            {% for task in tasks %}
+            <div class="task {% if task.done %}done{% endif %}">
+                <form method="post" action="{{ url_for('toggle_task', task_id=task.id) }}">
+                    <button class="check-button" aria-label="Toggle task complete">{{ "✓" if task.done else "" }}</button>
+                </form>
+                <div class="task-main">
+                    <strong>{{ task.title }}</strong>
+                    <span>{{ task.course }} · {{ task.hours }}h · {{ task.priority }}</span>
+                </div>
+                <form method="post" action="{{ url_for('delete_task', task_id=task.id) }}">
+                    <button class="delete-button" aria-label="Delete task">×</button>
+                </form>
+            </div>
+            {% else %}
+            <div class="empty-state">No tasks yet. Add your first task on the left.</div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

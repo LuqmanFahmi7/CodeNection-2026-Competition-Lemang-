@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="breakdown">
+    <div class="breakdown-title-row">
+        <h1>Workload Breakdown</h1>
+        <div class="recommendation">
+            You're at <strong>{{ data.overall }}%</strong> capacity this week<br>
+            <span>Recommended: drop non-essential social errands &amp; seek study groups</span>
+        </div>
+    </div>
+
+    <div class="breakdown-grid">
+        {% for card in cards %}
+        <article class="load-card">
+            <div class="load-card-top">
+                <h2>{{ card.name }}</h2>
+                <span class="percent {{ card.color_class }}">{{ card.score }}%</span>
+            </div>
+            <div class="accent-line {{ card.color_class }}"></div>
+            <p class="contributors-title">Contributors:</p>
+            <ul>
+                {% for item in card.contributors %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

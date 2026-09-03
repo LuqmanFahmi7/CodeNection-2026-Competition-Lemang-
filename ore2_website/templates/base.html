@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ore2 — Student Workload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="navbar">
+            <a class="brand" href="{{ url_for('home') }}">Ore2</a>
+
+            <nav class="nav-links" aria-label="Main navigation">
+                <a class="{{ 'active' if active == 'home' else '' }}" href="{{ url_for('home') }}">Features</a>
+                <a class="{{ 'active' if active == 'planner' else '' }}" href="{{ url_for('planner') }}">Planner</a>
+                <a class="{{ 'active' if active == 'workload' or active == 'breakdown' else '' }}" href="{{ url_for('workload') }}">Workload</a>
+            </nav>
+
+            <button class="pill-button self-test" type="button">Self-Test</button>
+        </header>
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer class="footer">
+            <span>Ore2</span>
+            <span>See the full picture of your academic, social, physical and mental workload.</span>
+        </footer>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+        const toast = document.getElementById("toast");
+
+        function showToast(message) {
+            toast.textContent = message;
+            toast.classList.add("show");
+            setTimeout(() => toast.classList.remove("show"), 3500);
+        }
+
+        document.querySelector(".self-test")?.addEventListener("click", async () => {
+            try {
+                const response = await fetch("/self-test", { method: "POST" });
+                const result = await response.json();
+                showToast(`Self-Test: ${result.score}% load — ${result.message}`);
+            } catch (error) {
+                showToast("Self-Test could not be completed.");
+            }
+        });
+    </script>
+</body>
+</html>
