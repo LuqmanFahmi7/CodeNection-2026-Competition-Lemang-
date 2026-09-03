@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+    <div class="hero-copy">
+        <p class="eyebrow">STUDENT WELLBEING DASHBOARD</p>
+        <h1>Because Students Carry<br>More Than Assignments</h1>
+        <p class="hero-text">
+            See the full picture of your academic, social, physical and mental workload.
+            Manage stress, visualize threshold and restore balance.
+        </p>
+
+        <div class="hero-actions">
+            <button class="dark-button self-test" type="button">Self-Test</button>
+            <a class="light-button" href="{{ url_for('workload') }}">Learn More</a>
+        </div>
+    </div>
+
+    <div class="hero-art">
+        <img src="{{ url_for('static', filename='hero-student.png') }}" alt="Student feeling overwhelmed by study work">
+    </div>
+</section>
+
+<section class="feature-strip">
+    <div class="feature">
+        <span class="feature-number">01</span>
+        <h3>See the whole load</h3>
+        <p>Combine study, time, physical and social demands in one view.</p>
+    </div>
+    <div class="feature">
+        <span class="feature-number">02</span>
+        <h3>Spot your threshold</h3>
+        <p>Understand when your weekly workload starts becoming too heavy.</p>
+    </div>
+    <div class="feature">
+        <span class="feature-number">03</span>
+        <h3>Restore balance</h3>
+        <p>Use the planner to turn overload into small, manageable actions.</p>
+    </div>
+</section>
+{% endblock %}
