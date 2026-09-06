@@ -1,24 +1,40 @@
 # CodeNection-2026-Competition-Lemang-
 
-================ Group Info =================
+ORe2 by Lemang
+
+================ Group Info ==================
 Group : Lemang
 Member 1: Luqman Hakim Bin Muhammad Fahmi
-Member 2:
-Member 3:
-Member 4:
+Member 2: Emil Shadiq Bin Iskandar
+Member 3: Arfa Mirza Bin Shamsul Safuan
+Member 4: Dairell Hannan Bin Ahmad Nizam
+
+Problem Statement: Stress & Workload Manager
+Video Presentation:
+Presentation Slides:
+==============================================
+
+============== Project Overview ==============
+
+The problem
+
+- Students in universities are stressed and overloaded with the amount of task they needed to do. They do not know how much weight they are carrying on their backs which prompt them to procastinate less urgent work that will backfire and hence, leads to stress and workload overload.
+
+Our solution
+
+- 
+
+
+Core Features
+- Work Planner
+- Workload Tracker
+- Rebalance Workload
+- Still thinking
+
+
 =============================================
 
-============ Website Information ============
-
-Name: ORe2 
-Motto: Offload, Rebalance, Restore.
-
-=============================================
-
-
-============= Problem Statement =============
-
-Lifestyle Track : Beating the Burnout
+============== Ideation and Process ==============
 
 Why we chose the Lifestyle Track titled Beating the Burnout instead of Planning an Escape?
 
@@ -27,17 +43,10 @@ Why we chose the Lifestyle Track titled Beating the Burnout instead of Planning 
 - Innovation potential, as we know preventing stress and workload would allow our team to deliver a sophisticated features that will be in our website.
 
 
-What is the issue?
 
-- Students in universities are stressed and overloaded with the amount of task they needed to do. They do not know how much weight they are carrying on their backs which prompt them to procastinate less urgent work that will backfire and hence, leads to stress and workload overload.
+============== Mentor Consultation ==============
 
-Who is our target user?
-
-- We are specifically targeting students that are in universities as they have to manage between doing assignments, tests, part-time jobs, comittee events and social activities. However, school students, corporate employees or anyone that is struggling with stress and workload can be benefitted by our website. 
-
-Current solution and our solution.
-
--
-
-
-=============================================
+| Date | Mentor | Feedback Received | What was changed |
+| :--- | :--- | :--- | :--- |
+| Row 1 Data | Row 1 Data | Row 1 Data | Row 1 Data |
+| Row 2 Data | Row 2 Data | Row 2 Data | Row 2 Data |
