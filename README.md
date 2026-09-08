@@ -12,33 +12,31 @@ Member 4: Dairell Hannan Bin Ahmad Nizam
 Problem Statement: Stress & Workload Manager
 Video Presentation:
 Presentation Slides:
-==============================================
+
 
 ============== Project Overview ==============
 
 The problem
 
-- Students in universities are stressed and overloaded with the amount of task they needed to do. They do not know how much weight they are carrying on their backs which prompt them to procastinate less urgent work that will backfire and hence, leads to stress and workload overload. Applications have been developed in the past to help students balance better such as Motion and Reclaim.ai. They're AI-driven calendar assistance which on paper sounds amazing, but they're heavily focussed on maximum corporate productivity and not energy management, which does not solve the problem of student burnout and consequently fails to retain the amount of students using their website.
+- Students in universities are stressed and overloaded with the amount of task they needed to do from assignments to part-time jobs. They do not know how much weight they are carrying on their backs which prompt them to procastinate the less urgent work that will backfire and hence, leads to stress and workload overload. Applications have been developed in the past to help students balance better such as Motion and Reclaim.ai. They're AI-driven calendar assistance which on paper sounds amazing, but they're heavily focussed on maximum corporate productivity and not energy management, which does not solve the problem of student burnout and consequently fails to retain the amount of students using their website.
 
 Our solution
 
-- Our solution is building a website to make universities student an option for tracking their workload and mental state in a interactive way to keep the user interested in our website which potentially can help prevent burnouts. Our feature such as work planner allows our user to plan their work by how heavy the work is such as light, medium and heavy. If the user does too much heavy task, our website might tell the user to take a break and suggest activity or recovery suggestion so the user can relax their mind. With lessons from failed developed applications, we are focussing on balancing the workload so the user is free from overload.
+- Our solution is building a website that tracks their well-being in terms of mental state and tracks the workload all in one for universities students to utilize. Our feature such as work planner allows our user to plan their work by how heavy the work is such as light, medium and heavy. If the user does too much heavy task, our website might tell the user to take a break and suggest activity or recovery suggestion so the user can relax their mind. With lessons from failed developed applications, we are focussing on balancing the workload so the user is free from overload.
 
 
 Core Features
 - Work Planner
 - Progress Bar (Work Completed & Congratulate the user)
-- Workload Tracker
+- Multi-Domain Tracker (Tracks work, life and mental state)
 - Rebalance Workload
 - "I'm tired" feature (It hides heavy and medium task)
 - Reminder Notification & Sanity Check (Ask how the user feel - Good, Happy, Sad)
 - Login Streak
 - Rejection Recommendation
 - Recovery Suggestion (Based on user input)
+- Health Problem Setup
 
-
-
-=============================================
 
 ============== Ideation and Process ==============
 
@@ -50,16 +48,25 @@ Why we chose the Lifestyle Track titled Beating the Burnout instead of Planning 
 
 
 
+
+
 ============== Mentor Consultation ==============
+
+Below are our conclusion on our mentorship session during our prototype phase:
 
 | Date | Mentor | Feedback Received | What was changed |
 | :--- | :--- | :--- | :--- |
-| Row 1 Data | Row 1 Data | Row 1 Data | Row 1 Data |
+| 7/9/2026 | Faris Imran | - Our initial idea was very general and we should focus more on something that stands out and unique that is only available to our website. | We added a feature where it asks the user for any health problem and customise the website setup based on the user health problem. However, we still inteded to keep the initial features on our website to make people stick to our website alongside the unique feature. |
+
 | Row 2 Data | Row 2 Data | Row 2 Data | Row 2 Data |
 
 ============== Design & Prototype ==============
 
+Below we will share our website design using canva and showcase what the currect actual website currently has
+
 UI Prototype : https://canva.link/2jphwxxks8f2sro
+
+Prototype Website:
 
 
 ============== What Makes It Different ==============
