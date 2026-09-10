@@ -14,7 +14,7 @@ Video Presentation:
 Presentation Slides:
 
 
-============== Project Overview ==============
+================== 1.0 Project Overview ==================
 
 The problem
 
@@ -38,7 +38,7 @@ Core Features
 - Health Problem Setup (Asks the user if they have any health issues before signing up)
 
 
-============== Ideation and Process ==============
+================== 2.0 Ideation and Process ==================
 
 2.1 Ideas We Considered
 
@@ -111,26 +111,20 @@ Here's our initial discussion for ideas.
 
 ![Mindmap](ore2_website/static/IDEA%20DUMP.png)
 
-Here's our indetified core problems.
-
-![]()
-
 Here's our 2nd discussion during our brainstorming session on an interactive board.
 
 ![Hierarchical Diagram](ore2_website/static/Brainstorm.png)
 
 Here's how our initial thoughts on how the program should work from start to finish, covering all features.
 
-![]()
+![User flow]()
 
 Here's our current website progress and it's version as we continue to build our website.
 
 ![Programming Log](LemangDecisionLog.md)
 
 
-
-
-============== Mentor Consultation ==============
+2.3 Mentor Consultation
 
 Below are our conclusion on our mentorship session during our prototype phase:
 
@@ -138,9 +132,9 @@ Below are our conclusion on our mentorship session during our prototype phase:
 -----------------------------------------------------------------------------------------------------------------------------------------
 | 7/9/2026 | Faris Imran | - Our initial idea was very general and we should focus more on something that stands out and unique that is only available to our website. | We added a feature where it asks the user for any health problem and customise the website setup based on the user health problem. However, we still inteded to keep the initial features on our website to make people stick to our website alongside the unique feature. |
 -----------------------------------------------------------------------------------------------------------------------------------------
-| Row 2 Data | Row 2 Data | Row 2 Data | Row 2 Data |
 
-============== Design & Prototype ==============
+
+================== 3.0 Design & Prototype ==================
 
 Below we will share our website design using canva and showcase what the currect actual website currently has
 
@@ -158,8 +152,10 @@ Instructions on how to run our website prototype using app.py:
 
 If you're still confuse how to open it, we have prepared a visual on how to run the prototype.
 
+![Instructions]()
 
-============== What Makes It Different ==============
+
+================== 4.0 What Makes It Different ==================
 
 We have some unique features that makes our website supperior in comparisons to others as we have features such as Health Problem Setup and Multi-Domain Tracker.
 
@@ -171,16 +167,42 @@ Multi-Domain Tracker
 
 A tracker that would track would track other stuff like life and mental state rather than only tracking work progress is truly what sets our website apart from others as in research we noticed that they only focus on maximizing productivity without caring about the health state of their users. With our website, we aknowledge that users have feelings rather than numbers on a screen and with our feature it would help them track their well-being long before any burnouts hits.
 
+Here's a comparison between our website and other peers
 
-============== Technical Architecture & Feasibility ==============
+![Comparison Table]()
+
+================== 5.0 Technical Architecture & Feasibility ==================
+
+5.1 Tech Stack
+
+As for now below are the tech we are currently planning to use in order to build our website, however, they may be subject to changes depending on our programming development.
+
+Frontend - Vanilla CSS3
+
+We chose Vanilla CSS3 because our team have experience in using it giving us significant advantages during our building phase. Other than that, Vanilla CSS3 offers no building steps, meaning we do not need to configure compilers or npm packages because the browser reads the code directly. It also gives peak performance as there is no overhead coming from large framework libraries, meaning the codes we write will result in smaller file sizes and our page will load significantly faster.
+
+However, we might face some issues during our development as vanilla CSS file can become difficult to maintain when the scale of our website project increases. Lastly, vanilla CSS does not have any built in system which means we have to write our own breakpoints, spacing scales and color gradient from scratch.
+
+Backend - Python (Flask)
+
+We chose Python (Flask) because it is one of the very first programming language we have learn and have experience building website in which would make it easier for us to create a solution when were familiar with the programming language. Other than that, Python (Flask) gives us flexibility and total control when building websites because they are simple and offer easy testing.
+
+However we do face some constraint using Python (Flask) with one of them being async limitations as the backend synchronous which limits our raw concurrent request processing. Lastly, it would be harder for us to maintain our website because of multiple independant modules that we are using for our program.
+
+Database - SQLite or PostgreSQL
+
+Were still deciding whether to use SQLite or PostgreSQl for our database as both are good to use. For example, SQLite offers zero configurations that require no setup or server process. They're also very portable because they store in a single disk file while making backups by copying file. However, they only allow one writer at a time despite allowing multiple readers and it is not good when traffic becomes heavy.
+
+For PostgreSQL, high concurrency that means multiple writer and readers are allowed because it uses Multi Version Concurrency Control to run smoothly and other than that it gives us the ability to use powerful extensions such as PostGIS but they have some constraints such as high latency even when the task is simple and local.
+
+Hosting and Services - Render
+
+We chose render because it allow us to deploy our website directly from our GitHub Repository. They also offer free packages for our python app as well as our database program using their free tier. However, our website will be deleted after 90 days and if the user is innactive for 15 minutes, our website might experience up to 1 minute of delay.
+
+System Architecture Diagram
+
+![Architecture Diagram](ore2_website/static/ArchitectureDiagram.png)
+
+5.2 Build Plan & Scope
 
 
-
-
-
-
-
-## Production note
-
-The included secret key is for development only. For production, set a secure `SECRET_KEY`
-environment variable and replace session storage with SQLite/PostgreSQL.
