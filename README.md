@@ -117,7 +117,7 @@ Here's our 2nd discussion during our brainstorming session on an interactive boa
 
 Here's how our initial thoughts on how the program should work from start to finish, covering all features.
 
-![User flow]()
+![User flow](ore2_website/static/UserFlow.png)
 
 Here's our current website progress and it's version as we continue to build our website.
 
@@ -150,10 +150,7 @@ Instructions on how to run our website prototype using app.py:
 4. Start the site: ```bash python app.py```
 5. Open `http://127.0.0.1:5000`.
 
-If you're still confuse how to open it, we have prepared a visual on how to run the prototype.
-
-![Instructions]()
-
+![Link Directory](ore2_website/static/LinkDirectory.png)
 
 ================== 4.0 What Makes It Different ==================
 
@@ -169,7 +166,7 @@ A tracker that would track would track other stuff like life and mental state ra
 
 Here's a comparison between our website and other peers
 
-![Comparison Table]()
+![Comparison Table](ore2_website/static/ComparisonTable.png)
 
 ================== 5.0 Technical Architecture & Feasibility ==================
 
@@ -205,4 +202,30 @@ System Architecture Diagram
 
 5.2 Build Plan & Scope
 
+Current Progress
 
+- Identified the core problems of our track and developed a solution for our track
+- Completed our initial UI and visual design prototypes that includes every feature of our website will offer using Canva 
+- Multiple visual assets created for ReadME file which includes 'Brainstorm.png' and 'ArchitectureDiagram.png'
+- Managed to convert some prototype UI and design into a website prototype, however it is not all as we plan to do that in the building phase
+
+In-scope (Deliverables For Building Phase)
+
+- Convert the canva design into a full functioned website using HTML5, custon CSS and Jinja2 inheritance.
+- Implement all of our core features and make sure they are working
+- Setting up a database storage 
+- Configure application with Gunicorn WSGI to deploy our website using Render
+- Implemnting Flask request that routes in 'app.py' for all essential views.
+- Implementing critical user workflow from input validation to rendering.
+
+Out-Of-Scope
+
+- User account registration along with MFA to keep their account secure
+- Asynchronous background job processing
+- Real-time notification to be used as reminders
+- Login streak
+
+Plan during the building phase
+
+Milestone 1: Succesfully implement the canva design on a working website / Succesfully implement all of our feature on our website and is fully working
+Milestone 2: Succesfully tested all the feature, error checking, quality of life, website improvements. / Final preparation for our website to be live
