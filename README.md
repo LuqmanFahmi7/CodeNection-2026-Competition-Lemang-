@@ -11,7 +11,7 @@ Member 4: Dairell Hannan Bin Ahmad Nizam
 
 Problem Statement: Stress & Workload Manager
 Video Presentation:
-Presentation Slides:
+Presentation Slides: https://www.canva.com/design/DAHU6Qi11ME/aAf35Ml-9_bXsyBaXoiJkw/edit
 
 
 ================== 1.0 Project Overview ==================
