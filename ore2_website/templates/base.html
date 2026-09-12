@@ -12,7 +12,7 @@
             <a class="brand" href="{{ url_for('home') }}">Ore2</a>
 
             <nav class="nav-links" aria-label="Main navigation">
-                <a class="{{ 'active' if active == 'home' else '' }}" href="{{ url_for('home') }}">Features</a>
+                <a class="{{ 'active' if active == 'home' else '' }}" href="{{ url_for('home') }}">Home</a>
                 <a class="{{ 'active' if active == 'planner' else '' }}" href="{{ url_for('planner') }}">Planner</a>
                 <a class="{{ 'active' if active == 'workload' or active == 'breakdown' else '' }}" href="{{ url_for('workload') }}">Workload</a>
             </nav>
