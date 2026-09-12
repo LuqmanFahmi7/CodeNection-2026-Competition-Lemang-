@@ -10,7 +10,7 @@ Member 3: Arfa Mirza Bin Shamsul Safuan
 Member 4: Dairell Hannan Bin Ahmad Nizam
 
 Problem Statement: Stress & Workload Manager
-Video Presentation:
+Video Presentation: https://youtu.be/e54NuSsdvUM
 Presentation Slides: https://www.canva.com/design/DAHU6Qi11ME/aAf35Ml-9_bXsyBaXoiJkw/edit
 
 
