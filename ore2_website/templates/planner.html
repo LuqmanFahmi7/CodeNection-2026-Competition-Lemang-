@@ -19,8 +19,11 @@
             <label>Task name
                 <input name="title" placeholder="e.g. Finish database report" required>
             </label>
-            <label>Course / area
-                <input name="course" placeholder="e.g. Database Systems">
+            <label> Task type
+                <input name="task_type" placeholder="e.g. Academics">
+            </label>
+            <label>Due date
+                <input name="due_date" type="date">
             </label>
             <div class="two-col">
                 <label>Hours
@@ -59,6 +62,21 @@
             {% else %}
             <div class="empty-state">No tasks yet. Add your first task on the left.</div>
             {% endfor %}
+            {% set total_tasks = tasks|length %}
+            {% set completed_tasks = tasks|selectattr("done")|list|length %}
+            {% set progress_pct = ((completed_tasks / total_tasks) * 100)|round|int if total_tasks > 0 else 0 %}
+
+            <div class="planner-progress-section">
+                <div class="progress-info">
+                    <span>Weekly Progress</span>
+                    <strong>{{ completed_tasks }} of {{ total_tasks }} completed ({{ progress_pct }}%)</strong>
+                </div>
+                
+                <!-- Track & Fill Bar -->
+                <div class="planner-progress-track">
+                    <div class="planner-progress-fill" style="width: {{ progress_pct }}%;"></div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

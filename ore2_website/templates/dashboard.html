@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="dashboard">
+    <div class="dashboard-grid">
+        <!-- Left Column: Summary & Actions -->
+        <div class="dashboard-left">
+            <p class="greeting">Good Evening {{ current_user.username }},</p>
+            <h1>How are you today?</h1>
+            
+            <div class="dashboard-text-block">
+                <h3>What you have accomplish so far and missing work</h3>
+                <p>Last week you have completed 4 task that includes heavy, medium and light. However you still have 2 missing work which is heavy and light.</p>
+            </div>
+
+            <div class="dashboard-text-block">
+                <h3>Let’s look at your recovery plan</h3>
+                <p>Last week you have completed tasks at an alarming rate which could lead to possible burnouts. See our recovery plan we have for you. You could reshuffle if you don’t like our current plan.</p>
+                <a href="{{ url_for('planner') }}" class="dashboard-btn">Recovery Plan</a>
+            </div>
+
+            <div class="dashboard-text-block">
+                <h3>Struggle to say no?</h3>
+                <p>We understand that saying no might be hard especially to someone that has authority or a family member. See our suggestion to decline politely.</p>
+                <a href="#" class="dashboard-btn">“No” Suggestion</a>
+            </div>
+        </div>
+
+        <!-- Center Floating Card: Recovery Gauge -->
+        <div class="recovery-card">
+            <h2>Recovery</h2>
+            <div class="semi-donut-chart" style="--percentage: 75;">
+                <span class="gauge-value">75%</span>
+            </div>
+            <p>You’re following 75% of our recovery plan</p>
+        </div>
+
+        <!-- Right Column: Burnout Breakdown -->
+        <div class="burnout-card">
+            <h2>Burnout Breakdown</h2>
+            <div class="burnout-inner">
+                <!-- Donut Chart -->
+                <div class="burnout-donut" style="--score: 78%;">
+                    <div class="donut-center">
+                        <strong>78%</strong>
+                        <span>HIGH LOAD</span>
+                    </div>
+                </div>
+
+                <h3>Overload Warning</h3>
+                <p class="warning-text">Your system is heavily bottlenecked by upcoming midterms and part-time shifts. Consider reshuffling.</p>
+
+                <!-- Metrics List -->
+                <div class="burnout-metrics">
+                    <div class="metric-row">
+                        <span class="metric-dot coral"></span>
+                        <span class="metric-label">Mental</span>
+                        <div class="metric-track"><div class="metric-fill coral" style="width: 92%;"></div></div>
+                        <span class="metric-val">92%</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="metric-dot coral"></span>
+                        <span class="metric-label">Time</span>
+                        <div class="metric-track"><div class="metric-fill coral" style="width: 88%;"></div></div>
+                        <span class="metric-val">88%</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="metric-dot green"></span>
+                        <span class="metric-label">Physical</span>
+                        <div class="metric-track"><div class="metric-fill green" style="width: 65%;"></div></div>
+                        <span class="metric-val">65%</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="metric-dot green"></span>
+                        <span class="metric-label">Social</span>
+                        <div class="metric-track"><div class="metric-fill green" style="width: 55%;"></div></div>
+                        <span class="metric-val">55%</span>
+                    </div>
+                </div>
+
+                <a href="{{ url_for('workload') }}" class="rebalance-btn">See how to rebalance</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
